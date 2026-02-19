@@ -1,0 +1,4 @@
+Compiler design involves    constructing software, known as a compiler, that translates high-level programming languages into efficient, executable machine code.
+It bridges  the gap between human-readable code and computer hardware through multi-phase processes: lexical analysis, syntax analysis,     semantic analysis, 
+intermediate code generation, optimization,             
+and code generation. 

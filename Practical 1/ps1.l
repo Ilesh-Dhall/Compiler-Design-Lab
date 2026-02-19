@@ -7,20 +7,21 @@
 %}  
 
 %%
-" "     {spaces++;}
-"\t"    {tabs++;}
-"\n"    {newlines++;}
-.       {rest++;}
+" "     { spaces++; }
+"\t"    { tabs++; }
+"\n"    { newlines++; }
+.       { rest++; }
 %%
 
 int main()
 {
     printf("Enter text : \n");
     yylex();
-    printf("Spaces %d\n", spaces);
+    printf("\nSpaces %d\n", spaces);
     printf("Tabs : %d\n", tabs);
     printf("Newlines : %d\n", newlines);
     printf("Others : %d\n", rest);
+    
     return 0;
 }
 

@@ -23,7 +23,7 @@
 
 6. Design a LEX Code to replace all the white spaces of ‘Input.txt’ file by a single blank character and store the output in ‘Output.txt’ file.
 
-7. Design a LEX Code to remove the comments from any C-Program (in.c ) given at run-time and store into ‘out.c’ file.
+7. Design a LEX Code to remove the comments from any C-Program (in.c ) given at run-time and store the result into ‘out.c’ file.
 
 8. Design a LEX Code to extract all html tags in the HTML file given at run time and store into text file given at run time.
 
