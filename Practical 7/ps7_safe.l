@@ -9,9 +9,9 @@
 .|\n                         { putc(yytext[0], yyout); }
 %%
 
-int main()
+int main(int argc, char *agrv[])
 {
-    yyin = fopen("in.c", "r");
+    yyin = fopen(argv[1], "r");
     yyout = fopen("out.c", "w");
 
     if(yyin == NULL)
