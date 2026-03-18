@@ -1,0 +1,25 @@
+%{
+#include <stdio.h>
+#include <stdlib.h>
+extern FILE *yyin, *yyout;
+%}
+
+%%
+\<[^>]*\>   {fprintf(yyout, "%s\n", yytext);}
+.|\n        ;
+%%
+
+int main(int argc, char* argv[])
+{
+    yyin = fopen(argv[1], "r");
+    yyout = fopen(argv[2], "w");
+    yylex();
+    fclose(yyin);
+    fclose(yyout);
+    return 0;
+}
+
+int yywrap()
+{
+    return 1;
+}
