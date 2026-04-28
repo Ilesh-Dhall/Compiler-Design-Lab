@@ -33,7 +33,7 @@
 
 11. Design a DFA in LEX Code to identify and print integer & float constants and identifier.
 
-12. Design YACC/LEX code to recognize the valid string from the language L= {anbn | n>=1}.
+12. Design YACC/LEX code to recognize the valid string from the language L= {a^nb^n | n>=1}.
 
 13. Design YACC/LEX code to recognize valid arithmetic expression with operators +, -, * and /.
 
